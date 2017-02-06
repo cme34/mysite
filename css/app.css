@@ -1,9 +1,107 @@
-.slideShowImages {
+.buttonNav {
+	background-color: #269115;
+	color: #fefefe;
+	font-size: 16pt;
+	margin: 0;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding: 18px 21px 10px 21px;
+	border-bottom-width: 8px;
+	border-bottom-color: rgba(128, 256, 128, 0);
+}	.buttonNav:hover, .buttonNav:focus {
+		background-color: #19c900;
+		color: #fefefe;
+	}
+
+.myHeader {
+	background: rgba(24, 24, 24, 0.25);
+	color: #fefefe;
+	text-align: center;
+	font-size: 32pt;
+}
+
+.section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+}
+
+.slide {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: inherit;
+	height: inherit;
 }
 
-#slideShow {
+.slideImage {
+	width: inherit;
+	height: inherit;
+}
+
+.slideText {
+	position: absolute;
+}
+
+.slideShow1SlideText{
+	background: rgba(24, 24, 24, 0.25);
+	color: #fefefe;
+	margin: 0;
+	padding: 16px 0;
+	width: 33.33%;
+	text-align: center;
+	font-size: 18pt;
+	bottom: 0;
+	left: 0;
+}
+
+#buttonRow {
+	display: table;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+	background-color: #5f935a;
+	width: 100%;
+	height: 128px;
+}
+
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #269115;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	opacity: 0.65;
+	
+	transition: opacity 1s ease-out;
+}	#nav:hover {
+		opacity: 0.90;
+	}
+	
+#navBuffer {
+	background-color: #aaaaaa;
+}
+
+#slideShow1 {
 	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+#slideShow1Slide1Text{
+	margin-left: 0;
+}
+
+#slideShow1Slide2Text{
+	margin-left: 33.33%;
+}
+
+#slideShow1Slide3Text{
+	margin-left: 66.66%;
 }

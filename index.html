@@ -6,13 +6,60 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
+	<link rel='stylesheet' media='screen and (max-width: 800px)' href='css/mobile.css' />
+	<link rel='stylesheet' media='screen and (min-width: 801px)' href='css/app.css' />
 </head>
 <body>
-	<div id="slideShow">
-		<img id="slideShowImage1" class="slideShowImages" src="img/Image 1.jpg" hidden />
-		<img id="slideShowImage2" class="slideShowImages" src="img/Image 2.jpg" hidden />
-		<img id="slideShowImage3" class="slideShowImages" src="img/Image 3.jpg" hidden />
+	<div id="home" class="section">
+		<div id="slideShow1" class="slideShow">
+			<div id="slide1" class="slide" hidden>
+				<img class="slideImage" src="img/Image 1.jpg" />
+				<div id="slideShow1Slide1Text" class="slideText slideShow1SlideText">PROGRAMMER</div>
+			</div>
+			<div id="slide2" class="slide" hidden>
+				<img class="slideImage" src="img/Image 2.jpg" />
+				<div id="slideShow1Slide2Text" class="slideText slideShow1SlideText">MUSICIAN</div>
+			</div>
+			<div id="slide3" class="slide" hidden>
+				<img class="slideImage" src="img/Image 3.jpg" />
+				<div id="slideShow1Slide3Text" class="slideText slideShow1SlideText">GAME DEVELOPER</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="about" class="section">
+		<div class="myHeader">ABOUT</div>
+	</div>
+	
+	<div id="programming" class="section">
+		<div class="myHeader">PROGRAMMING</div>
+	</div>
+	
+	<div id="music" class="section">
+		<div class="myHeader">MUSIC</div>
+	</div>
+	
+	<div id="gameDev" class="section">
+		<div class="myHeader">GAME DEVELOPMENT</div>
+	</div>
+	
+	<div id="gaming" class="section">
+		<div class="myHeader">GAMING</div>
+	</div>
+	
+	<div id="footer">
+		
+	</div>
+	
+	<div id="nav">
+		<div id="buttonRow">
+			<div id="buttonHome" class="button buttonNav">Home</div>
+			<div id="buttonAbout" class="button buttonNav">About</div>
+			<div id="buttonProgramming" class="button buttonNav">Programming</div>
+			<div id="buttonMusic" class="button buttonNav">Music</div>
+			<div id="buttonGameDev" class="button buttonNav">Game Dev</div>
+			<div id="buttonGaming" class="button buttonNav">Gaming</div>
+		</div>
 	</div>
 	
 	<script src="js/vendor/jquery.js"></script>
