@@ -1,14 +1,38 @@
 (function() {
 	$(document).foundation();
-	slideShow('slideShow1');
+	
+	function slideShow(slideShowID, holdTime, transitionTime) {
+		var curr = 0;
+		var slides = $('#' + slideShowID).find(".slide");
+		
+		$('#' + slides[0].id).show();
+		stay();
+		
+		function stay() {
+			setTimeout(fade, holdTime);
+		}
+		
+		function fade() {
+			next = curr + 1;
+			if (next >= slides.length) {
+				next = 0;
+			}
+			$('#' + slides[curr].id).fadeOut('slow');
+			$('#' + slides[next].id).fadeIn('slow');
+			curr = next;
+			setTimeout(stay, transitionTime);
+		}
+	}
+	
+	slideShow('slideShow1', 4000, 1000);
 	
 	function setCurrPage() {
 		var loc = $(window).scrollTop();
-		var pointAbout = $('#about').position().top;
-		var pointProgramming = $('#programming').position().top;
-		var pointMusic = $('#music').position().top;
-		var pointGameDev = $('#gameDev').position().top;
-		var pointGaming = $('#gaming').position().top;
+		var pointAbout = $('#about').position().top - $('#nav').height();
+		var pointProgramming = $('#programming').position().top - $('#nav').height();
+		var pointMusic = $('#music').position().top - $('#nav').height();
+		var pointGameDev = $('#gameDev').position().top - $('#nav').height();
+		var pointGaming = $('#gaming').position().top - $('#nav').height();
 		$('#buttonHome').css('border-bottom-color', 'rgba(128, 256, 128, 0)');
 		$('#buttonAbout').css('border-bottom-color', 'rgba(128, 256, 128, 0)');
 		$('#buttonProgramming').css('border-bottom-color', 'rgba(128, 256, 128, 0)');
@@ -37,6 +61,8 @@
 	$(window).resize(function() {
 		setCurrPage()
 	});
+	
+	setCurrPage();
 	
 	$('#buttonHome').click(function() {
 		$('html, body').finish();
@@ -70,6 +96,4 @@
 	
 	$('.myHeader').css('padding-top', $('#nav').height());
 	$('.myHeader').css('padding-bottom', $('#nav').height());
-	
-	setCurrPage();
 })();
