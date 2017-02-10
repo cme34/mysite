@@ -25,6 +25,7 @@
 	}
 	
 	slideShow('slideShow1', 4000, 1000);
+	slideShow('slideShow2', 4000, 1000);
 	
 	function setCurrPage() {
 		var loc = $(window).scrollTop();
@@ -93,7 +94,4 @@
 		$('html, body').finish();
 		$('html, body').animate({scrollTop: $('#gaming').offset().top}, 500);
 	});
-	
-	$('.myHeader').css('padding-top', $('#nav').height());
-	$('.myHeader').css('padding-bottom', $('#nav').height());
 })();

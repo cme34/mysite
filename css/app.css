@@ -2,6 +2,7 @@
 	background-color: #269115;
 	color: #fefefe;
 	font-size: 16pt;
+	height: 56px;
 	margin: 0;
 	margin-left: 4px;
 	margin-right: 4px;
@@ -13,27 +14,33 @@
 		color: #fefefe;
 	}
 
-.myHeader {
+.section {
+	display: block;
+	background-color: #c0c0c0;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	min-height: 480px;
+}
+
+.sectionHeader {
+	border: solid;
 	background: rgba(24, 24, 24, 1);
 	background-image: url("../img/Texture 1.png");
 	background-size: 100% 100%;
 	color: #fefefe;
 	text-align: center;
 	font-size: 32pt;
-}	.myHeader.myHeader1 {
+	padding: 0;
+	padding-top: 56px;
+	padding-bottom: 56px;
+}	.sectionHeader.sectionHeader1 {
 		background-image: url("../img/Texture 1.png");
 	}
-	.myHeader.myHeader2 {
+	.sectionHeader.sectionHeader2 {
 		background-image: url("../img/Texture 2.png");
 	}
 
-.section {
-	background-color: #c0c0c0;
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	min-height: 100vh;
-}
 
 .slide {
 	position: absolute;
@@ -112,4 +119,13 @@
 
 #slideShow1Slide3Text{
 	margin-left: 66.66%;
+}
+
+#slideShow2 {
+	display: inline;
+	right: 0;
+	position: absolute;
+	width: 30vh;
+	height: 60vh;
+	margin: 2vh 4vw 2vh 4vw;
 }
