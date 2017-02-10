@@ -41,6 +41,14 @@
 		background-image: url("../img/Texture 2.png");
 	}
 
+.sectionImage {
+	display: inline;
+	right: 0;
+	position: absolute;
+	width: 30vh;
+	height: 60vh;
+	margin: 2vh 4vw 2vh 4vw;
+}
 
 .slide {
 	position: absolute;
@@ -119,13 +127,4 @@
 
 #slideShow1Slide3Text{
 	margin-left: 66.66%;
-}
-
-#slideShow2 {
-	display: inline;
-	right: 0;
-	position: absolute;
-	width: 30vh;
-	height: 60vh;
-	margin: 2vh 4vw 2vh 4vw;
 }
