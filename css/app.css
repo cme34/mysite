@@ -3,8 +3,29 @@ body {
 	width: 100%;
 }
 
-ul.custom {
-	list-style-image: url("../img/Bullet Icon.png");
+li.eguitar {
+	list-style-image: url("../img/Icon E Guitar.png");
+	opacity: 0.5;
+}
+
+ul.aguitar {
+	list-style-image: url("../img/Icon A Guitar.png");
+	opacity: 0.5;
+}
+
+ul.mic {
+	list-style-image: url("../img/Icon Mic.png");
+	opacity: 0.5;
+}
+
+ul.amp {
+	list-style-image: url("../img/Icon Amp.png");
+	opacity: 0.5;
+}
+
+ul.pedal {
+	list-style-image: url("../img/Icon Pedal.png");
+	opacity: 0.5;
 }
 
 .buttonNav {
@@ -23,6 +44,27 @@ ul.custom {
 		color: #fefefe;
 	}
 
+.clear {
+	clear: both;
+}
+
+.fillHeight {
+	height: 100%;
+}
+
+.fillWidth {
+	width: 100%;
+}
+
+.float {
+	float: left;
+}	.float.left {
+		float: left;
+	}
+	.float.right {
+		float: right;
+	}
+
 .imgText {
 	position: absolute;
 	top: 0;
@@ -35,6 +77,16 @@ ul.custom {
 .imgTextContainer {
 	width: 192px;
 	height: 64px;
+}
+
+.inline {
+	display: inline;
+}
+
+.musicListElement {
+	display: inline;
+	float: left;
+	margin-left: 8px;
 }
 
 .relative {
