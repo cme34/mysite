@@ -1,3 +1,8 @@
+body {
+	display: table;
+	width: 100%;
+}
+
 ul.custom {
 	list-style-image: url("../img/Bullet Icon.png");
 }
@@ -18,8 +23,26 @@ ul.custom {
 		color: #fefefe;
 	}
 
+.imgText {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto 0 auto;
+}
+
+.imgTextContainer {
+	width: 192px;
+	height: 64px;
+}
+
+.relative {
+	position: relative;
+}
+	
 .section {
-	display: block;
+	display: table-row;
 	background-color: #c0c0c0;
 	position: relative;
 	width: 100%;
@@ -53,12 +76,15 @@ ul.custom {
 
 .sectionImage {
 	display: inline;
-	right: 0;
 	position: absolute;
-	width: 30vh;
+	width: 45vh;
 	height: 60vh;
 	padding: 0;
-	margin: 2vh 4vw 2vh 4vw;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
 }
 
 .slide {
@@ -80,10 +106,24 @@ ul.custom {
 
 .slideShow1SlideText{
 	background: rgba(24, 24, 24, 0.25);
+	position: absolute;
 	color: #fefefe;
 	margin: 0;
 	padding: 16px 0;
 	width: 33.33%;
+	text-align: center;
+	font-size: 18pt;
+	bottom: 0;
+	left: 0;
+}
+
+.slideShow2SlideText{
+	background: rgba(24, 24, 24, 0.25);
+	position: absolute;
+	color: #fefefe;
+	margin: 0;
+	padding: 8px 0;
+	width: 100%;
 	text-align: center;
 	font-size: 18pt;
 	bottom: 0;
@@ -124,14 +164,18 @@ ul.custom {
 	height: 100vh;
 }
 
-#slideShow1Slide1Text{
+#slideShow1Slide1Text {
 	margin-left: 0;
 }
 
-#slideShow1Slide2Text{
+#slideShow1Slide2Text {
 	margin-left: 33.33%;
 }
 
-#slideShow1Slide3Text{
+#slideShow1Slide3Text {
 	margin-left: 66.66%;
+}
+
+#slideShow2 {
+	margin-top: 15%;
 }
